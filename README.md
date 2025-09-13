@@ -37,16 +37,16 @@ To run this project locally, follow these steps:
 
 
 
-python -m venv venv
-venv\Scripts\activate
+  python -m venv venv
+  venv\Scripts\activate
 
 3. **Install the required dependencies:**
 
-pip install -r requirements.txt
+  pip install -r requirements.txt
 
 4. **Run the application:**
 
-python app.py
+   python app.py
 
 
  * => The application will be available at http://127.0.0.1:5000.
