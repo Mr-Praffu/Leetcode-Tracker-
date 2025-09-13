@@ -3,7 +3,7 @@
 
 A Flask web application to track LeetCode problems, schedule reviews using spaced repetition, and visualize progress.
 
-![LeetCode Tracker Screenshot](Screenshot-2025-09-13-152901.jpg)
+![LeetCode Tracker Screenshot](assets/screenshot.png)
 
 ## Features
 
