@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Problem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container py-4">
+    <h3 class="mb-4">✏️ Edit Problem</h3>
+
+    <form action="/edit/{{ problem[0] }}" method="POST" class="card p-3 shadow-sm">
+        <input type="text" name="title" class="form-control mb-2" value="{{ problem[1] }}" required>
+        <input type="url" name="link" class="form-control mb-2" value="{{ problem[2] }}" required>
+        <select name="difficulty" class="form-select mb-2">
+            <option {{ 'selected' if problem[3]=='Easy' else '' }}>Easy</option>
+            <option {{ 'selected' if problem[3]=='Medium' else '' }}>Medium</option>
+            <option {{ 'selected' if problem[3]=='Hard' else '' }}>Hard</option>
+        </select>
+        <textarea name="notes" class="form-control mb-3" rows="3">{{ problem[4] }}</textarea>
+        <div class="d-flex justify-content-between">
+            <a href="/" class="btn btn-secondary">⬅ Back</a>
+            <button class="btn btn-primary">💾 Save Changes</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
+
+
